@@ -64,6 +64,7 @@ Informação sobre como a API trata os erros e as respostas esperadas para os ca
   {
     "nome": "Nome do Cliente",
     "email": "email@cliente.com",
+    "document": cpf ou cnpj,
     "telefone": "999999999"
   }
   ```
