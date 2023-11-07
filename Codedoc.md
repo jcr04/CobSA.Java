@@ -86,6 +86,7 @@ Informação sobre como a API trata os erros e as respostas esperadas para os ca
 {
   "nome": "Novo Nome",
   "email": "novoemail@cliente.com",
+  "document": "cpf ou cnpj",
   "telefone": "988888888"
 }
 ```
