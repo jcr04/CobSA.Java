@@ -1,27 +1,5 @@
 # Documentação Técnica da API CobSA
 
-## Índice
-
-- [Introdução](#introdução)
-- [Autenticação](#autenticação)
-- [Erro Handling](#erro-handling)
-- [Clientes](#clientes)
-  - [Listar Clientes](#listar-clientes)
-  - [Obter Cliente](#obter-cliente)
-  - [Criar Cliente](#criar-cliente)
-  - [Atualizar Cliente](#atualizar-cliente)
-  - [Deletar Cliente](#deletar-cliente)
-- [Cobranças](#cobranças)
-  - [Listar Cobranças](#listar-cobranças)
-  - [Obter Cobrança](#obter-cobrança)
-  - [Criar Cobrança](#criar-cobrança)
-  - [Atualizar Cobrança](#atualizar-cobrança)
-  - [Deletar Cobrança](#deletar-cobrança)
-- [Modelos](#modelos)
-  - [Cliente](#cliente)
-  - [Cobrança](#cobrança)
-- [Códigos de Resposta](#códigos-de-resposta)
-
 ## Introdução
 
 Esta API fornece um conjunto de serviços para a gestão de clientes e suas cobranças. Os endpoints permitem operações CRUD padrão em duas entidades principais: `Cliente` e `Cobrança`.
