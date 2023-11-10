@@ -34,104 +34,14 @@ Detalhes sobre o método de autenticação utilizado pela API (por exemplo, Bear
 
 Informação sobre como a API trata os erros e as respostas esperadas para os casos de erro.
 
-## Clientes
+## Endpoints da aplicação:
+![Screenshot_6](https://github.com/jcr04/CobSA.Java/assets/70778525/d1c899af-e3d6-4c9b-82e7-eebfefee0340)
 
-### Listar Clientes
+### Endpoint Principal:
+* - Payments (POST) Criar Pagamento:
+- ![Screenshot_4](https://github.com/jcr04/CobSA.Java/assets/70778525/50860095-c037-490a-88ab-4d95751f90f6)
+- ![Screenshot_5](https://github.com/jcr04/CobSA.Java/assets/70778525/05cbfcf2-e922-497a-b7ab-2cf31b0360c0)
 
-- **GET** `/customers`
-- **Descrição**: Retorna uma lista de todos os clientes.
-- **Respostas**:
-  - `200 OK`: Sucesso.
-  - `500 Internal Server Error`: Erro no servidor.
-
-### Obter Cliente
-
-- **GET** `/customers/{id}`
-- **Descrição**: Retorna os detalhes de um cliente específico.
-- **Parâmetros**:
-  - `id`: ID do cliente (obrigatório).
-- **Respostas**:
-  - `200 OK`: Sucesso.
-  - `404 Not Found`: Cliente não encontrado.
-  - `500 Internal Server Error`: Erro no servidor.
-
-### Criar Cliente
-
-- **POST** `/customers`
-- **Descrição**: Cria um novo cliente.
-- **Body** (application/json):
-  ```json
-  {
-    "nome": "Nome do Cliente",
-    "email": "email@cliente.com",
-    "document": "cpf ou cnpj",
-    "telefone": "999999999"
-  }
-  ```
-- Respostas:
- - `201 Created`: Cliente criado com sucesso.
- - `400 Bad Request`: Dados de entrada inválidos.
- - `500 Internal Server Error`: Erro no servidor.
-
-## Atualizar Cliente
-
-**PUT** `/customers/{id}`  
-**Descrição**: Atualiza os detalhes de um cliente existente.  
-**Parâmetros**:
-- `id`: ID do cliente (obrigatório).
-
-**Body** (application/json):  
-
-```json
-{
-  "nome": "Novo Nome",
-  "email": "novoemail@cliente.com",
-  "document": "cpf ou cnpj",
-  "telefone": "988888888"
-}
-```
-## Respostas
-
-- `200 OK`: Cliente atualizado com sucesso.
-- `404 Not Found`: Cliente não encontrado.
-- `400 Bad Request`: Dados de entrada inválidos.
-- `500 Internal Server Error`: Erro no servidor.
-
-## Deletar Cliente
-
-**DELETE** `/customers/{id}`  
-**Descrição**: Remove um cliente do sistema.  
-**Parâmetros**:
-
-- `id`: ID do cliente (obrigatório).
-
-## Respostas
-
-- `200 OK`: Cliente excluído com sucesso.
-- `404 Not Found`: Cliente não encontrado.
-- `500 Internal Server Error`: Erro no servidor.
-
-# Cobranças
-
-Detalhes similares aos fornecidos na seção de clientes, adaptados para as cobranças.
-
-## Modelos
-
-### Cliente
-
-Estrutura do objeto `Cliente` com detalhes sobre cada campo (por exemplo, `nome`, `email`, `telefone`).
-
-### Cobrança
-
-Estrutura do objeto `Cobrança` com detalhes sobre cada campo (por exemplo, `valor`, `data_vencimento`, `status`).
-
-## Códigos de Resposta
-
-- `200 OK`: A operação foi bem-sucedida.
-- `201 Created`: Um novo recurso foi criado com sucesso.
-- `400 Bad Request`: A requisição é inválida ou malformada.
-- `404 Not Found`: O recurso solicitado não foi encontrado.
-- `500 Internal Server Error`: Ocorreu um erro interno no servidor.
 
 
 
